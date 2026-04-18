@@ -3,6 +3,8 @@
   <h3><a href="https://pan.lyc8503.net">onedrive-cf-index-ng</a></h3>
   <p><em>OneDrive public directory listing forked from <a href="https://github.com/spencerwooo/onedrive-vercel-index">onedrive-vercel-index</a>, powered by Cloudflare and Next.js</em></p>
 
+> ⚠⚠ THE ORIGINAL REPO AND USER WAS BANNED, READ MORE IN [HERE](https://blog.lyc8503.net/post/github-account-suspended/) 
+
   <img src="https://img.shields.io/badge/OneDrive-2C68C3?style=flat&logo=microsoft-onedrive&logoColor=white" alt="OneDrive" />
   <img src="https://img.shields.io/badge/Cloudflare-f38020?style=flat&logo=Cloudflare&logoColor=white" alt="Cloudflare" />
   <img src="https://img.shields.io/badge/Next.js-black?style=flat&logo=next.js&logoColor=white" alt="Next.js" />
@@ -14,6 +16,7 @@
 - Also support [Docker Deployment](https://github.com/lyc8503/onedrive-cf-index-ng/wiki/Docker-Deployment) now!
 - No more dependency on Upstash / 3rd-party service
 - Maybe some future maintenance or improvements from me ([@lyc8503](https://github.com/lyc8503))
+- Some modifications from [@chemchetchagio](https://github.com/chemchetchagio)
 
 *Special thanks to the original author of this project [@spencerwooo](https://github.com/spencerwooo) and all contributors*
 
@@ -31,14 +34,13 @@ Showcase, share, preview, and download files inside *your* OneDrive with onedriv
 
 ## Quick start
 
-🚀 Quick start: [Getting started](https://github.com/lyc8503/onedrive-cf-index-ng/wiki/Getting-Started).
+🚀 Quick start: [Getting started](https://github.com/lyc8503/onedrive-cf-index-ng/wiki/Getting-Started). 
 
 *If you happen to like this project, please give it a star!* :3
 
 ## Demo
 
-Live demo at [lyc8503's Fileshare](https://pan.lyc8503.net).
-
+Live demo at [Nhatnam's repo](https://nhatnam-repo.vercel.app).
 ![demo](./public/demo.png)
 
 ## Features
@@ -113,11 +115,12 @@ Live demo at [lyc8503's Fileshare](https://pan.lyc8503.net).
 
 > **Note**: This project is focused on showcasing and providing a way for others to download files from your OneDrive. Emphasis on **free** and **serverless**. If you have your own server / need WebDAV / use cloud providers other than OneDrive, checkout [alist](https://github.com/alist-org/alist).
 
-### Modification 
+### Modifications from Me
 + Changed font and CDN font to private.coffee
 + Changed backgroud
-+ Changed pdf.js preview to older version ()
++ Changed pdf.js preview to older version (for compatibility)
 + Tweaked search bar
++ Rewrite README.MD (not so much, just changed image, still keep original links)
 ## Documentation
 
 Documentation is hosted at [GitHub Wiki](https://github.com/lyc8503/onedrive-cf-index-ng/wiki).
@@ -148,10 +151,15 @@ Yes! Completely free with no backend server what-so-ever.
 - [x] Local/Docker deployment support
 - [ ] Some TODOs left in the code
 - [x] More tests
+- [ ] Change another music player (yes i want loop)
+- [ ] JS-less
+- [ ] Fix SHA-256 and SHA-1
+- [ ] More blur
+- [ ] Rewrite Wiki [(seem original repo has been cooked)](https://blog.lyc8503.net/post/github-account-suspended/)
 
 <div align="center">
   <img src="./public/footer.png" />
-  <em>made with ❤️ by <a href="https://lyc8503.net">lyc8503</a> & <a href="https://spencerwoo.com">spencer woo</a></em>
+  <em>made with ❤️ and fatpeoples by <a href="https://lyc8503.net">lyc8503</a> & <a href="https://spencerwoo.com">spencer woo</a></em> & <a href="https://github.com/chemchetchagio">chemchetchagio</a>
 </div>
 
 
