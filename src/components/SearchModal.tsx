@@ -16,20 +16,9 @@ import { getFileIcon } from '../utils/getFileIcon'
 import { fetcher } from '../utils/fetchWithSWR'
 import siteConfig from '../../config/site.config'
 
-/**
- * Extract the searched item's path in field 'parentReference' and convert it to the
- * absolute path
- *
- * @param path Path returned from the parentReference field of the driveItem
- * @returns The absolute path of the driveItem in the search result
- */
 function mapAbsolutePath(path: string): string {
-  // path is in the format of '/drive/root:/path/to/file', if baseDirectory is '/' then we split on 'root:',
-  // otherwise we split on the user defined 'baseDirectory'
   const absolutePath = path.split(siteConfig.baseDirectory === '/' ? 'root:' : siteConfig.baseDirectory)
-  // path returned by the API may contain #, by doing a decodeURIComponent and then encodeURIComponent we can
-  // replace URL sensitive characters such as the # with %23
-  return absolutePath.length > 1 // solve https://github.com/spencerwooo/onedrive-vercel-index/issues/539
+  return absolutePath.length > 1
     ? absolutePath[1]
         .split('/')
         .map(p => encodeURIComponent(decodeURIComponent(p)))
@@ -37,27 +26,16 @@ function mapAbsolutePath(path: string): string {
     : ''
 }
 
-/**
- * Implements a debounced search function that returns a promise that resolves to an array of
- * search results.
- *
- * @returns A react hook for a debounced async search of the drive
- */
 function useDriveItemSearch() {
   const [query, setQuery] = useState('')
   const searchDriveItem = async (q: string) => {
     const { data } = await axios.get<OdSearchResult>(`/api/search?q=${q}`)
-
-    // Map parentReference to the absolute path of the search result
     data.map(item => {
       item['path'] =
         'path' in item.parentReference
-          ? // OneDrive International have the path returned in the parentReference field
-            `${mapAbsolutePath(item.parentReference.path)}/${encodeURIComponent(item.name)}`
-          : // OneDrive for Business/Education does not, so we need extra steps here
-            ''
+          ? `${mapAbsolutePath(item.parentReference.path)}/${encodeURIComponent(item.name)}`
+          : ''
     })
-
     return data
   }
 
@@ -94,7 +72,7 @@ function SearchResultItemTemplate({
       passHref
       className={`flex items-center space-x-4 border-b border-gray-400/30 px-4 py-1.5 hover:bg-white/10 ${
         disabled ? 'pointer-events-none cursor-not-allowed' : 'cursor-pointer'
-}`}
+      }`}
     >
       <FontAwesomeIcon icon={driveItem.file ? getFileIcon(driveItem.name) : ['far', 'folder']} />
       <div>
@@ -146,10 +124,8 @@ function SearchResultItemLoadRemote({ result }: { result: OdSearchResult[number]
 
 function SearchResultItem({ result }: { result: OdSearchResult[number] }) {
   if (result.path === '') {
-    // path is empty, which means we need to fetch the parentReference to get the path
     return <SearchResultItemLoadRemote result={result} />
   } else {
-    // path is not an empty string in the search result, such that we can directly render the component as is
     const driveItemPath = decodeURIComponent(result.path)
     return (
       <SearchResultItemTemplate
@@ -200,12 +176,12 @@ export default function SearchModal({
             leave="ease-in duration-100"
             leaveFrom="opacity-100 scale-100"
             leaveTo="opacity-0 scale-95"
-         >
+          >
             <div className="my-12 inline-block w-full max-w-3xl transform overflow-hidden rounded border border-gray-400/30 text-left shadow-xl transition-all">
               <Dialog.Title
                 as="h3"
                 className="flex items-center space-x-4 border-b border-gray-400/30 bg-black/60 p-4 text-white"
-              > 
+              >
                 <FontAwesomeIcon icon="search" className="h-4 w-4" />
                 <input
                   type="text"
