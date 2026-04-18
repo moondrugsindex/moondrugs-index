@@ -113,6 +113,11 @@ Live demo at [lyc8503's Fileshare](https://pan.lyc8503.net).
 
 > **Note**: This project is focused on showcasing and providing a way for others to download files from your OneDrive. Emphasis on **free** and **serverless**. If you have your own server / need WebDAV / use cloud providers other than OneDrive, checkout [alist](https://github.com/alist-org/alist).
 
+### Modification 
++ Changed font and CDN font to private.coffee
++ Changed backgroud
++ Changed pdf.js preview to older version ()
++ Tweaked search bar
 ## Documentation
 
 Documentation is hosted at [GitHub Wiki](https://github.com/lyc8503/onedrive-cf-index-ng/wiki).
