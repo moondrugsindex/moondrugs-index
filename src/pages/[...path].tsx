@@ -22,7 +22,7 @@ export default function Folders() {
       {/* Very background image */}
       <div className="fixed inset-0 -z-10 h-full w-full">
         <Image
-          src="https://wq64c-my.sharepoint.com/personal/nhatnam_repo_wq64c_onmicrosoft_com/_layouts/15/download.aspx?SourceUrl=%2Fpersonal%2Fnhatnam%5Frepo%5Fwq64c%5Fonmicrosoft%5Fcom%2FDocuments%2F20240217%5F134724%5F2%2Ejpg"
+          src="https://cdn.discordapp.com/attachments/1382939841649578098/1494901106768220262/dxrsrpq.jpg?ex=69e44aa5&is=69e2f925&hm=db1918effd1c34d3d9c0317677cb03db8837f66a0e304db5566509223ac91724&"
           alt="background"
           fill
           className="object-cover object-center"
