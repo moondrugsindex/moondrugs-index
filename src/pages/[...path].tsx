@@ -22,7 +22,7 @@ export default function Folders() {
       {/* Very background image */}
       <div className="fixed inset-0 -z-10 h-full w-full">
         <Image
-          src="https://cdn.discordapp.com/attachments/1382939841649578098/1494901106768220262/dxrsrpq.jpg?ex=69e44aa5&is=69e2f925&hm=db1918effd1c34d3d9c0317677cb03db8837f66a0e304db5566509223ac91724&"
+          src="/public/images/20240217_134724_2.jpg"
           alt="background"
           fill
           className="object-cover object-center"
@@ -31,7 +31,7 @@ export default function Folders() {
         />
       </div>
 
-      <main className="flex w-full flex-1 flex-col bg-black/40 backdrop-blur-sm">
+      <main className="flex w-full flex-1 flex-col bg-black/25 ">
         <Navbar />
         <div className="mx-auto w-full max-w-5xl py-4 sm:p-4">
           <nav className="mb-4 flex items-center justify-between space-x-3 px-4 sm:px-0 sm:pl-1">
