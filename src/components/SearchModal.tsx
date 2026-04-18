@@ -200,12 +200,12 @@ export default function SearchModal({
             leave="ease-in duration-100"
             leaveFrom="opacity-100 scale-100"
             leaveTo="opacity-0 scale-95"
-          >
-            className="max-h-[80vh] overflow-x-hidden overflow-y-scroll bg-black/60 text-white"
+         >
+            <div className="my-12 inline-block w-full max-w-3xl transform overflow-hidden rounded border border-gray-400/30 text-left shadow-xl transition-all">
               <Dialog.Title
                 as="h3"
                 className="flex items-center space-x-4 border-b border-gray-400/30 bg-black/60 p-4 text-white"
-              >
+              > 
                 <FontAwesomeIcon icon="search" className="h-4 w-4" />
                 <input
                   type="text"
