@@ -18,7 +18,7 @@ export default function Home() {
       {/* Background Image */}
       <div 
         className="fixed inset-0 -z-10 h-full w-full bg-cover bg-center"
-        style={{ backgroundImage: 'url(/images/20240217_134724_2-small.jpg)' }}
+        style={{ backgroundImage: 'url(/images/bg.jpg)' }}
       />
 
       <main className="flex w-full flex-1 flex-col bg-black/40">
