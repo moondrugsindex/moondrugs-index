@@ -1,6 +1,5 @@
 /* rebased image */
 import Head from 'next/head'
-import Image from 'next/image'
 
 import siteConfig from '../../config/site.config'
 import Navbar from '../components/Navbar'
@@ -16,13 +15,13 @@ export default function Home() {
         <title>{siteConfig.title}</title>
       </Head>
 
-      {/* Rebased background image */}
+      {/* Background Image */}
       <div 
         className="fixed inset-0 -z-10 h-full w-full bg-cover bg-center"
-        style={{ backgroundImage: 'url(/images/20240217_134724_2-small-small.jpg)' }}
+        style={{ backgroundImage: 'url(/images/20240217_134724_2-small.jpg)' }}
       />
 
-      <main className="flex w-full flex-1 flex-col bg-black/25">
+      <main className="flex w-full flex-1 flex-col bg-black/40">
         <Navbar />
         <div className="mx-auto w-full max-w-5xl py-4 sm:p-4">
           <nav className="mb-4 flex items-center justify-between px-4 sm:px-0 sm:pl-1">
