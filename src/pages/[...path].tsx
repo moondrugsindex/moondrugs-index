@@ -20,16 +20,10 @@ export default function Folders() {
       </Head>
 
       {/* Very background image */}
-      <div className="fixed inset-0 -z-10 h-full w-full">
-        <Image
-          src="/images/20240217_134724_2.jpg"
-          alt="background"
-          fill
-          className="object-cover object-center"
-          priority
-          quality={100}
-        />
-      </div>
+      <div 
+        className="fixed inset-0 -z-10 h-full w-full bg-cover bg-center"
+        style={{ backgroundImage: 'url(/images/20240217_134724_2-small.jpg)' }}
+      />
 
       <main className="flex w-full flex-1 flex-col bg-black/25 ">
         <Navbar />
