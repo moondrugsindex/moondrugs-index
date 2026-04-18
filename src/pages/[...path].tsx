@@ -1,6 +1,5 @@
 /* Yep, another rebased*/
 import Head from 'next/head'
-import Image from 'next/image'
 import { useRouter } from 'next/router'
 
 import siteConfig from '../../config/site.config'
@@ -19,13 +18,13 @@ export default function Folders() {
         <title>{siteConfig.title}</title>
       </Head>
 
-      {/* Very background image */}
+      {/* Background Image */}
       <div 
         className="fixed inset-0 -z-10 h-full w-full bg-cover bg-center"
         style={{ backgroundImage: 'url(/images/20240217_134724_2-small.jpg)' }}
       />
 
-      <main className="flex w-full flex-1 flex-col bg-black/25 ">
+      <main className="flex w-full flex-1 flex-col bg-black/40">
         <Navbar />
         <div className="mx-auto w-full max-w-5xl py-4 sm:p-4">
           <nav className="mb-4 flex items-center justify-between space-x-3 px-4 sm:px-0 sm:pl-1">
