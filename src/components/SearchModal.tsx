@@ -156,17 +156,6 @@ export default function SearchModal({
     <Transition appear show={searchOpen} as={Fragment}>
       <Dialog as="div" className="fixed inset-0 z-[200] overflow-y-auto" onClose={closeSearchBox}>
         <div className="min-h-screen px-4 text-center">
-          <Transition.Child
-            as={Fragment}
-            enter="ease-out duration-100"
-            enterFrom="opacity-0"
-            enterTo="opacity-100"
-            leave="ease-in duration-100"
-            leaveFrom="opacity-100"
-            leaveTo="opacity-0"
-          >
-            <DialogBackdrop className="fixed inset-0 pointer-events-none" />
-          </Transition.Child>
 
           <Transition.Child
             as={Fragment}
