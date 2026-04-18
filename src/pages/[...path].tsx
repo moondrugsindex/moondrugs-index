@@ -13,7 +13,7 @@ export default function Folders() {
   const { query } = useRouter()
 
   return (
-    <div className="relative flex min-h-screen flex-col items-center justify-center bg-white dark:bg-gray-900">
+    <div className="relative flex min-h-screen flex-col items-center justify-center ">
       <Head>
         <title>{siteConfig.title}</title>
       </Head>
