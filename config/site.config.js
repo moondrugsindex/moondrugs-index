@@ -55,7 +55,7 @@ module.exports = {
     {
       name: 'Discord'
       link: 'https://discord.com/users/1162380508253134888'
-    }
+    },
   ],
 
   // This is a day.js-style datetime format string to format datetimes in the app. Ref to
