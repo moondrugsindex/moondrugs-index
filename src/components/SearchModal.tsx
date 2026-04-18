@@ -189,7 +189,7 @@ export default function SearchModal({
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <DialogBackdrop className="fixed inset-0 bg-white/80 dark:bg-gray-800/80" />
+            <DialogBackdrop className="fixed inset-0 bg-black/50 backdrop-blur-sm" />
           </Transition.Child>
 
           <Transition.Child
