@@ -19,7 +19,7 @@ export default function Home() {
       {/* Rebased background image */}
       <div className="fixed inset-0 -z-10 h-full w-full">
         <Image
-          src="/public/images/20240217_134724_2.jpg"
+          src="/images/20240217_134724_2.jpg"
           alt="background"
           fill
           className="object-cover object-center"
