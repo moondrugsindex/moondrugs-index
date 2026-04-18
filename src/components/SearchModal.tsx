@@ -165,7 +165,7 @@ export default function SearchModal({
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <DialogBackdrop className="fixed inset-0" />
+            <DialogBackdrop className="fixed inset-0 pointer-events-none" />
           </Transition.Child>
 
           <Transition.Child
